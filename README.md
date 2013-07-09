@@ -1,4 +1,4 @@
 srrvnn.com
 ==========
 
-The life and times of Saravanan Ganesh
+My address on the world wide web, and the code that builds it. 
