@@ -111,8 +111,8 @@ a:hover {
 	margin: 50px 30px;
 	padding: 10px;
 
-	border-bottom: 1px dashed #ccc;
-	border-top: 2px solid #47E8FD;
+	/*border-bottom: 1px dashed #ccc;*/
+	border-top: 2px solid #1CA1D2;
 	/*background-color: #F6FFFF;*/
 }
 
