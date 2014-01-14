@@ -3,6 +3,9 @@
 	session_start();
 	//echo "done";
 } 
-	`git pull`;
+	
+	echo 'Hello World!';
+
+	// `git pull`;
 
 ?>
