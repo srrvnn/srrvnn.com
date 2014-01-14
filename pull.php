@@ -4,6 +4,6 @@
 	//echo "done";
 } 
 
-	`git pull`;
+	exec('git pull');
 
 ?>
