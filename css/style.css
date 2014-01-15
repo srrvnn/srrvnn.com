@@ -7,7 +7,7 @@ html, body {
 
 /* DOCUMENT ELEMENTS */
 
-.container {
+.srrvnn-container {
 
 	/* take up the entire screen */
 
@@ -18,20 +18,19 @@ html, body {
 }
 
 
-.header {
+.srrvnn-header {
 
 	/* place the header 50px from the top, sides and margin*/
 
-	width: 90%;
-	height: 50px;
+	width: 95%;
 
-	padding: 50px 20px 0px;
+	padding: 50px 20px 10px;
 	margin: 5px auto;
 
 	border-bottom: 1px solid #ccc;
 }
 
-.content {
+.srrvnn-content {
 
 	padding: 0px 50px;
 	margin: 10px auto;	
@@ -39,7 +38,7 @@ html, body {
 	text-align: center;	
 }
 
-.navigation {
+.srrvnn-navigation {
 
 	margin: 50px 0px;	
 	padding: 0px 5%;
@@ -69,12 +68,12 @@ a:hover {
 
 /* SPECIFIC ELEMENTS */
 
-.name {
+.srrvnn-name {
 
 	font-size: 36px;
 }
 
-.links > li{
+.srrvnn-links > li{
 
 
 	font-size: 20px;	
@@ -83,14 +82,14 @@ a:hover {
 	text-align: right;
 }
 
-.prologue {
+.srrvnn-prologue {
 	
 	width: 75%;
 	padding: 20px;
 
 }
 
-.prologue > p{
+.srrvnn-prologue > p{
 	
 	font-size: large;
 	text-align: left;
@@ -101,7 +100,7 @@ a:hover {
 
 }
 
-.story{
+.srrvnn-story{
 
 	font-size: small;
 
@@ -116,7 +115,7 @@ a:hover {
 	/*background-color: #F6FFFF;*/
 }
 
-.headline {
+.srrvnn-headline {
 
 /*	text-align: justify;
 	line-height: 24px;
@@ -125,7 +124,7 @@ a:hover {
 
 }
 
-.text {
+.srrvnn-text {
 
 	margin-top: 25px;
 	padding-top: 5px;
@@ -137,22 +136,3 @@ a:hover {
 
 	padding: 10px 20px;*/
 }
-
-/*.story {
-
-
-	background-color:rgba(210,215,220,0.3);
-	border-radius: 5px;
-
-}
-
-.headline > p{
-
-	font-size: large;
-	text-align: left;
-
-	line-height: 30px;
-
-	padding: 10px 20px;
-}*/
-
