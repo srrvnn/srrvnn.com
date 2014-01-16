@@ -31,19 +31,21 @@
 
 </head>
 
-<body style="background: #fff">
+<body>
 
-  <div class="srrvnn-container">
-
-    <div class="srrvnn-border" style="height: 1%; background: #505050"> 
+  <div class="starter" style="height: 1%; background: #505050"> 
 
       </div>
 
-    <div class="srrvnn-header">
+  <div class="row header">
 
-      <span class="srrvnn-name"> <a href="http://srrvnn.com" style="color:black">  <b> SARAVANAN </b> GANESH </a> </span>
+      <span class="col-xs-12 col-md-4 name text-center" style="font-size: 34px;"> 
 
-      <span class="srrvnn-links" style="float:right; padding-top: 5px">
+        <a href="http://srrvnn.com" style="color:black">  <b> SARAVANAN </b> GANESH </a> </span>
+
+      <span class="col-xs-12 col-md-4"> &nbsp; </span>                  
+
+      <span class="col-xs-12 col-md-4 links text-center" style="padding-top: 5px">
 
         <a href="https://github.com/srrvnn?tab=repositories" target="_blank">
           <img src="images/icons/github.png" style="height: 30px; padding-left: 10px" /></a>
@@ -51,7 +53,7 @@
         <a href="http://twitter.com/srrvnn" target="_blank">
           <img src="images/icons/twitter.png" style="height: 30px; padding-left: 10px" /></a>
 
-        <a href="http://www.linkedin.com/profile/view?id=92037541" target="_blank">
+        <a href="http://www.linkedin.com/in/srrvnn" target="_blank">
           <img src="images/icons/linkedin.png" style="height: 30px; padding-left: 10px" /></a>
 
         <a href="http://facebook.com/srrvnn" target="_blank">
@@ -72,9 +74,13 @@
 
       </div>
 
-    <div class="srrvnn-content">
+  <div class="container">
 
-      <div class="srrvnn-prologue">                
+    <div class="row content">
+
+      <!-- <div class="hidden-xs" style="float: left; padding-left:7%"> &nbsp; </div> -->
+
+      <div class="col-xs-12 col-sm-8 prologue">
 
         <p> 
 
@@ -84,7 +90,7 @@
 
         </p>
 
-        <p style="color: #E4E4E4; font-size: medium;"> 
+        <p class="dimtext"> 
 
           No. No. You're not.
 
@@ -96,7 +102,7 @@
 
         </p>
 
-        <p style="color: #E4E4E4; font-size: medium;"> 
+        <p class="dimtext"> 
 
           They'll flag you.
 
@@ -122,7 +128,7 @@
         </p>               
 
 
-        <p style="color: #E4E4E4; font-size: small; border-top: 1px dashed #ccc; padding: 2px; margin-top: 20px;"> 
+        <p class="dimtext" style="font-size: small; border-top: 1px dashed #ccc; padding: 2px; margin-top: 20px;"> 
 
           Inspired from The Dark Knight by Christopher Nolan
 
@@ -146,8 +152,8 @@
 
     $(document).ready(function() {
 
-      $(".srrvnn-name").delay(1000).fadeOut(2000, function() {
-        $(this).html("<span style='font-size:x-large'><b>suh ruh one None</b> - guh Nay sh</span>");            
+      $(".name").delay(1000).fadeOut(2000, function() {
+        $(this).html("<span style='font-size:x-large'><b> suh ruh one None </b> guh Nay sh </span>");            
         $(this).fadeIn(2000, function() {
 
           $(this).delay(8000).fadeOut(2000, function() {
