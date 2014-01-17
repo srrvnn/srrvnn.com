@@ -17,23 +17,22 @@ html, body {
 	min-height:100%;
 }
 
-
 .header {
 
 	/* place the header 50px from the top, sides and margin*/
 
-	width: 90%;
-	height: 50px;
+	width: 95%;
 
-	padding: 50px 20px 0px;
+	padding: 50px 20px 10px;
 	margin: 5px auto;
 
 	border-bottom: 1px solid #ccc;
 }
 
 .content {
+	
+	width: 90%;
 
-	padding: 0px 50px;
 	margin: 10px auto;	
 
 	text-align: center;	
@@ -67,12 +66,13 @@ a:hover {
 	color: #1CA1D2;
 }
 
-/* SPECIFIC ELEMENTS */
+p.dimtext {
 
-.name {
-
-	font-size: 36px;
+	color: #989898; 
+	font-size: medium;
 }
+
+/* SPECIFIC ELEMENTS */
 
 .links > li{
 
@@ -83,14 +83,13 @@ a:hover {
 	text-align: right;
 }
 
-.prologue {
+.prologue {	
 	
-	width: 75%;
 	padding: 20px;
 
 }
 
-.prologue > p{
+.prologue > p {
 	
 	font-size: large;
 	text-align: left;
@@ -137,22 +136,3 @@ a:hover {
 
 	padding: 10px 20px;*/
 }
-
-/*.story {
-
-
-	background-color:rgba(210,215,220,0.3);
-	border-radius: 5px;
-
-}
-
-.headline > p{
-
-	font-size: large;
-	text-align: left;
-
-	line-height: 30px;
-
-	padding: 10px 20px;
-}*/
-
