@@ -1,138 +1,225 @@
-html, body {
+/* main sections */
 
-	font-family: 'Open Sans', sans-serif;		
+* {
 
-	height: 100%;		
+	font-family: 'Open Sans', sans-serif;
 }
 
-/* DOCUMENT ELEMENTS */
+html, body, .main {
 
-.container {
+	display: table;
 
-	/* take up the entire screen */
-
-	width: 100%;	
 	height: 100%;
+	width: 99%;
 
-	min-height:100%;
+	padding: 0px;
+	margin: 0px;
+
+	font-size: 14px;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	background: no-repeat center center;
+
+	/*background-image: -ms-radial-gradient(left bottom, circle farthest-corner, #FFFFFF 40%, #000000 100%);
+	background-image: -moz-radial-gradient(left bottom, circle farthest-corner, #FFFFFF 40%, #000000 100%);
+	background-image: -o-radial-gradient(left bottom, circle farthest-corner, #FFFFFF 40%, #000000 100%);
+	background-image: -webkit-gradient(radial, left bottom, 0, left bottom, 1012, color-stop(0.4, #FFFFFF), color-stop(1, #000000));
+	background-image: -webkit-radial-gradient(left bottom, circle farthest-corner, #FFFFFF 40%, #000000 100%);
+	background-image: radial-gradient(circle farthest-corner at left bottom, #FFFFFF 40%, #000000 100%);	*/
+
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
 }
 
-.header {
+.main .row {
 
-	/* place the header 50px from the top, sides and margin*/
-
-	width: 95%;
-
-	padding: 50px 20px 10px;
-	margin: 5px auto;
-
-	border-bottom: 1px solid #ccc;
+	height: 100%;
 }
 
-.content {
+.main-left {
+
+	height: 35%;
+	background: #505050;
+
+	text-align: center;		
+
+	transition: margin 0.3s;
+}
+
+.main-right {
+
+	margin-top: 5%;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+/* index section */
+
+.index {
+
+	text-align: center;
+	margin-top: 15px;
+}
+
+.index ul {
+
+	height: 300px;
+
+
+	margin: 10px;
+	padding: 0px 10px;
+
+	list-style: none;
+}
+
+.index li {
+
+	display: inline-block;
+	padding: 15px;
+}
+
+.index img {
+
+	width: 60px;
+}
+
+.index li a, .index li a:visited {
+
+	text-decoration: none;
+	color: black;
+
+}
+
+/* search section */
+
+.search {
+
+	padding: 25px;
+	padding-left: 50px;
+
+}
+
+.glyphicon {
+
+	position: absolute;
+	padding-top: 38px;
+	padding-left: 20px;
+}
+
+.search input {
 	
-	width: 90%;
+	height: 3em;
+	width: 365px;
 
-	margin: 10px auto;	
+	border-radius: 25px;
 
 	text-align: center;	
 }
 
-.navigation {
+*:focus {
 
-	margin: 50px 0px;	
-	padding: 0px 5%;
+    outline: 0;
+}
 
-	position: absolute;
-	top: 0px; right: 0px;
+/* intro */
 
-	width: 25%;
-	height: 100%;
+.name {
 
-	text-align: right;	
+	font-weight: 700;
+	vertical-align: middle;
+	font-family: 'CodeProDemoRegular', sans-serif;
+	color: white;
+	letter-spacing: 2px;
 	
 }
 
-/* GENERIC ELEMENTS */
+.lead {
 
-a {
+	margin: 22% auto;
+	text-align: center;
+
+	transition: margin 0.2s ease-out;
+}
+
+.lead p {
+
+	width: 90%;
+	margin: 0px auto;
+	font-size: 16px;
+}
+
+/* learn section */
+
+.learn {
+
+	text-align: center;
+	margin-top: 15px;
+}
+
+.learn ul {
+
+	margin: 10px;
+	padding: 0px 10px;
+
+	list-style: none;
+}
+
+.learn li {
+
+	display: inline-block;
+	padding: 15px;
+}
+
+.heading {
+
+	width: 80%;
+
+	margin: 10px auto;
+	padding: 10px 5px;
+
+	border-radius: 25px;
+}
+
+a, a:hover {
 
 	text-decoration: none;
-	color: black;	
 }
 
-a:hover {
+.pages {
 
-	color: #1CA1D2;
+	text-align: center;
 }
 
-p.dimtext {
+.pages li {
 
-	color: #989898; 
-	font-size: medium;
+	display: block;
 }
 
-/* SPECIFIC ELEMENTS */
+.pic {
 
-.links > li{
-
-
-	font-size: 20px;	
-	padding: 10px 30px;
-
-	text-align: right;
+	border-radius: 100px;
+	width: 150px;
+	margin: 10px;
 }
 
-.prologue {	
-	
-	padding: 20px;
+/* adjustments for mobile screen */
 
-}
+@media screen and (min-width:768px) {
 
-.prologue > p {
-	
-	font-size: large;
-	text-align: left;
+	.main-left {
 
-	line-height: 25px;
+		height: 100%;
+	}
 
-	padding: 10px 0px;
+	.lead p {
 
-}
+		width: 50%;
 
-.story{
+	}
 
-	font-size: small;
-
-	text-align: justify;
-	line-height: 24px;
-
-	margin: 50px 30px;
-	padding: 10px;
-
-	/*border-bottom: 1px dashed #ccc;*/
-	border-top: 2px solid #1CA1D2;
-	/*background-color: #F6FFFF;*/
-}
-
-.headline {
-
-/*	text-align: justify;
-	line-height: 24px;
-
-	padding: 10px 20px;*/
-
-}
-
-.text {
-
-	margin-top: 25px;
-	padding-top: 5px;
-
-	font-weight: bold;	
-
-/*	text-align: justify;
-	line-height: 24px;
-
-	padding: 10px 20px;*/
 }

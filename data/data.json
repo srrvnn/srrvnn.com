@@ -51,7 +51,7 @@
         "name":"Email",
         "img":"images/facebook",
         "href":"mailto:srrvnn@live.com",
-        "tags":["contact","email"]
+        "tags":["contact","email", "outlook", "message", "gmail"]
     },
     {
         "name":"Stackoverflow",
