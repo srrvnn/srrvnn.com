@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
   <title>Saravanan Ganesh</title>
 
   <script src="lib/angular/angular.min.js"></script>
   <script src="lib/angular/angular-route.min.js"></script>
+
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
 
@@ -21,26 +24,25 @@
   <link rel="stylesheet" href="css/codepro_regulardemo_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 
 </head>
+
 <body>
+
   <div class="main container" ng-controller="LinksController">
 
     <div class="row">
 
       <div class="main-left col-md-7 col-sm-6 col-xs-12">
 
-        <div class="lead">
+        <div class="intro">
 
-          <img src="http://graph.facebook.com/1158350342/picture?type=large" class="pic">          
-          <h1 class="name"> SARAVANAN GANESH </h1>   
+          <img src="http://graph.facebook.com/1158350342/picture?type=large" class="pic">
 
-          <hr width="200px"> 
+          <h1 class="name"> SARAVANAN GANESH </h1>
 
-          <p> 
+          <hr width="200px">
 
-          Computer Science Graduate @ USC <br/> 
-          Excited at everything that a code can solve
-
-          </p>   
+          <p>  Computer Science Graduate @ USC <br/>
+          Excited at everything that a code can solve  </p>
 
         </div>
 
@@ -48,60 +50,51 @@
 
       <div class="main-right col-md-5 col-sm-6 col-xs-12">
 
-      	<section class="intro">
-
-      	</section>
-
         <div class="search">
-            <span class="glyphicon glyphicon-search"></span>
-            <input ng-model="query" placeholder="code, resume, social, email, blog etc.">
-          </div>
 
-      	<section class="index">
+          <span class="glyphicon glyphicon-search"></span>
+          <input ng-model="query" placeholder="code, resume, social, email, blog etc.">
+        </div>
 
-          <div class="heading">
+      	<section class="does">
 
-              <p> what he does: </p>
-          </div>
+          <p class="heading"> what he does: </p>
 
         	<ul class="links">
-          	<li class="link"  ng-repeat="item in links | filter: query">
+
+          	<li class="link"  ng-repeat="item in does | filter: query">
             	<a href="{{item.href}}"> <img ng-src="img/{{item.name|lowercase}}.png" alt="{{item.name}}"> </a>
           	</li>
+
         	</ul>
 
     		</section>
 
-    		<section class="learn">
+    		<section class="doing">
 
-          <div class="heading">
+          <p class="heading"> what he is doing: </p>
 
-              <p> what he is doing: </p>
-          </div>
+          <ul class="links">
 
-          <div class="content">
+            <li class="link" ng-repeat="item in doing | filter: query | limitTo: 3 ">
 
-            <ul class="pages">
+              <a href="{{item.url}}"> {{item.title}} </a>
 
-              <li class="page" ng-repeat="page in pages | filter: query | limitTo: 3 ">
+            </li>
 
-                <a href="{{page.url}}"> {{page.title}} </a>
+          </ul>
 
-              </li>
-
-            </ul>
-
-          </div>
     		</section>
 
       </div>
 
-    </div>
+    </div> <!-- end of .row -->
 
-  </div> <!-- end of .row -->
+  </div> <!-- end of .main -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
@@ -109,10 +102,6 @@
 
     $(window).focus(function() {
         $('.lead').css('margin-top','20%');
-    });
-
-    $(window).blur(function() {
-        $('.lead').css('margin-top','22%');
     });
 
   </script>
