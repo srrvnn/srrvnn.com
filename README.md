@@ -1,4 +1,4 @@
-srrvnn.com
+srrvnn.name
 ==========
 
-My address on the world wide web, and the code that builds it. 
+my index to the world wide web - what i do and what i am doing
