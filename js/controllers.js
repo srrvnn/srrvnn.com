@@ -17,6 +17,6 @@ myControllers.controller('LinksController', ['$scope', '$http', function ($scope
 
 myControllers.controller('ResumeController', ['$scope', function ($scope) {
 
-	window.location.replace("http://srrvnn.name/docs/SaravananGanesh_Resume.pdf");
+	window.location.replace("https://onedrive.live.com/redir?resid=8CDD6272DC7CE21E%21101182");
 
 }]);

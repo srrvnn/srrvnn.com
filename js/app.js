@@ -3,7 +3,8 @@ var myApp = angular.module('myApp', [
     'myControllers'
 ]);
 
-myApp.config(['$routeProvider', function($routeProvider) {
+myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
     $routeProvider.
     when('/', {
         templateUrl: 'partials/intro.html',
@@ -16,4 +17,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
     otherwise({
         redirectTo: '/'
     });
+
+    // enable html5Mode for pushstate ('#'-less URLs)
+    // $locationProvider.html5Mode(true);
+
 }]);
