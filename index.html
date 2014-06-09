@@ -30,68 +30,7 @@
 
 <body>
 
-  <div class="main container" ng-controller="LinksController">
-
-    <div class="row">
-
-      <div class="main-left col-md-7 col-sm-6 col-xs-12">
-
-        <div class="intro">
-
-          <img src="http://graph.facebook.com/1158350342/picture?type=large" class="pic">
-
-          <h1 class="name"> SARAVANAN GANESH </h1>
-
-          <hr width="200px" align="center">
-
-          <p>  Computer Science Graduate from USC <br/>
-          Excited at everything that a code can solve  </p>
-
-        </div>
-
-      </div>
-
-      <div class="main-right col-md-5 col-sm-6 col-xs-12">
-
-        <div class="search">
-
-          <span class="glyphicon glyphicon-search"></span>
-          <input ng-model="query" placeholder="code, resume, social, email, blog etc.">
-        </div>
-
-      	<section class="does">
-
-          <p class="heading"> what he does: </p>
-
-        	<ul class="links">
-
-          	<li class="link"  ng-repeat="item in does | filter: query">
-            	<a href="{{item.href}}"> <img ng-src="img/{{item.name|lowercase}}.png" alt="{{item.name}}"> </a>
-          	</li>
-
-        	</ul>
-
-    		</section>
-
-    		<section class="doing">
-
-          <p class="heading"> what he is doing: </p>
-
-          <ul class="links">
-
-            <li class="link" ng-repeat="item in doing | filter: query | limitTo: 3 ">
-
-              <a href="{{item.url}}"> {{item.title}} </a>
-
-            </li>
-
-          </ul>
-
-    		</section>
-
-      </div>
-
-    </div> <!-- end of .row -->
+  <div class="main container" ng-view>
 
   </div> <!-- end of .main -->
 

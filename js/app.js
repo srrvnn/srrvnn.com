@@ -3,13 +3,17 @@ var myApp = angular.module('myApp', [
     'myControllers'
 ]);
 
-// myApp.config(['$routeProvider', function($routeProvider) {
-//     $routeProvider. 
-//     when('/index', {
-//         templateUrl: 'partials/list.html',
-//         controller: 'ListController'
-//     }). 
-//     otherwise({
-//         redirectTo: '/index'
-//     });
-// }]);
+myApp.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.
+    when('/', {
+        templateUrl: 'partials/intro.html',
+        controller: 'LinksController'
+    }).
+    when('/resume', {
+        template: '<div></div>',
+        controller: 'ResumeController'
+    }).
+    otherwise({
+        redirectTo: '/'
+    });
+}]);
