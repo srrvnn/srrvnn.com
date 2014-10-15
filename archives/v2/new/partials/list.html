@@ -1,0 +1,12 @@
+<section class="linkInfo">
+	<div class="search">
+      <input ng-model="query" placeholder="Search" autofocus>      
+    </div>
+
+    <ul class="links">
+      <li class="link"  ng-repeat="item in links | filter: query">
+        <h3> {{item.name}} </h3>        
+        <h4> {{item.href}} </h4>        
+      </li>      
+    </ul>
+</section>
