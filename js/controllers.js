@@ -15,8 +15,20 @@ myControllers.controller('LinksController', ['$scope', '$http', function ($scope
 		});
 }]);
 
-myControllers.controller('ResumeController', ['$scope', function ($scope) {
+myControllers.controller('ResumeController', ['$scope', '$window', '$http', function ($scope, $window, $http) {
 
-	window.location.replace("https://onedrive.live.com/redir?resid=8CDD6272DC7CE21E%21101182");
+	$http.get('data/does.json')
+		.success(function (data) {
 
+			for (var iterateLinks = 0; iterateLinks < data.length; iterateLinks++) {
+
+				var link = data[iterateLinks];
+
+				if (link.name === 'Resume') {
+
+			  		$window.location.replace(link.href);
+				}
+			}
+
+  		});
 }]);
